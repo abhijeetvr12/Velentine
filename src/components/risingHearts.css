@@ -1,0 +1,49 @@
+.rising-hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.r-heart {
+  position: absolute;
+  bottom: -40px;
+  width: 18px;
+  height: 18px;
+  background: #ff4d6d;
+  transform: rotate(45deg);
+  animation: rise linear infinite;
+  opacity: 0.8;
+}
+
+.r-heart::before,
+.r-heart::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #ff4d6d;
+  border-radius: 50%;
+}
+
+.r-heart::before {
+  top: -9px;
+  left: 0;
+}
+
+.r-heart::after {
+  left: -9px;
+  top: 0;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1) rotate(45deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.5) rotate(45deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.hearts-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: float linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+}
+
+.heart::before { top: -10px; }
+.heart::after { left: -10px; }
+
+@keyframes float {
+  from { bottom: -10%; }
+  to { bottom: 110%; }
+}
