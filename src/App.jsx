@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import MusicPlayer from "./components/MusicPlayer";
 import HeartBackground from "./components/HeartBackground";
-
+import RoseDay from "./pages/RoseDay";
 import Valentine from "./pages/Valentine";
 import Gallery from "./pages/Gallery";
 import Timeline from "./pages/Timeline";
@@ -24,6 +24,8 @@ function MusicController() {
         return "/invisible.mp3";
       case "/final":
         return "/lovestory.mp3";
+      case "/rose-day":
+        return "treatyoubetter.mp3"  
       default:
         return "/lover.mp3";
     }
@@ -45,6 +47,8 @@ export default function App() {
         <Route path="/reasons" element={<Reasons />} />
         <Route path="/secret" element={<Secret />} />
         <Route path="/final" element={<Final />} />
+        <Route path="/rose-day" element={<RoseDay />} />
+
       </Routes>
     </BrowserRouter>
   );
