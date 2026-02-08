@@ -8,6 +8,7 @@ import Timeline from "./pages/Timeline";
 import Reasons from "./pages/Reasons";
 import Secret from "./pages/Secret";
 import Final from "./pages/Final";
+import ProposalDay from "./pages/ProposalDay";
 
 function MusicController() {
   const location = useLocation();
@@ -26,6 +27,9 @@ function MusicController() {
         return "/lovestory.mp3";
       case "/rose-day":
         return "treatyoubetter.mp3"  
+      case "/proposal-day":
+        return "attention.mp3"  
+
       default:
         return "/lover.mp3";
     }
@@ -48,6 +52,7 @@ export default function App() {
         <Route path="/secret" element={<Secret />} />
         <Route path="/final" element={<Final />} />
         <Route path="/rose-day" element={<RoseDay />} />
+        <Route path="/proposal-day" element={<ProposalDay />} />
 
       </Routes>
     </BrowserRouter>

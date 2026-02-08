@@ -87,7 +87,7 @@ export default function Valentine() {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        onClick={() => navigate("/rose-day")}
+        onClick={() => navigate("/proposal-day")}
         className="mt-10 bg-rose-500 text-white px-6 sm:px-8 py-3 rounded-xl text-base sm:text-lg z-10"
       >
         🌹 Valentine Week Surprise
