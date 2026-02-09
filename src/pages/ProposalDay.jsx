@@ -33,10 +33,10 @@ export default function ProposalDay() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-pink-100 text-center px-4 sm:px-6 py-10 relative overflow-hidden">
       
-      {/* 🎵 Background Song */}
+      {/* 🎵 Background Song
       <audio ref={audioRef} loop>
         <source src="/attention.mp3" type="audio/mp3" />
-      </audio>
+      </audio> */}
 
       {/* 💗 Floating Hearts */}
       <div className="absolute inset-0 pointer-events-none">
