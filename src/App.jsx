@@ -13,8 +13,8 @@ import ChocolateDay from "./pages/ChocolateDay";
 import TeddyDay from "./pages/TeddyDay";
 import ValentineWeek from "./pages/ValentineWeek";
 import TedSurprise from "./pages/TedSurprise";
-   
-
+import PromiseDay from "./pages/PromiseDay";
+import Index from "./pages/Index";
 function MusicController() {
   const location = useLocation();
 
@@ -38,6 +38,8 @@ function MusicController() {
         return "Closer.mp3"  
       case "/teddy-day":
         return "YouAreInLove.mp3"  
+      case "/index":
+        return "LoveMeLikeYouDo.mp3"  
 
       default:
         return "/lover.mp3";
@@ -66,8 +68,10 @@ export default function App() {
         <Route path="/valentine-week" element={<ValentineWeek />} />
         <Route path="/teddy-day" element={<TeddyDay />} />
         <Route path="/ted-surprise" element={<TedSurprise />} />
-
-
+        <Route path="/promise-day" element={<PromiseDay />} />
+        <Route path="/index" element={<Index />} />
+        
+          
       </Routes>
     </BrowserRouter>
   );

@@ -26,6 +26,12 @@ const days = [
     path: "/teddy-day",
     color: "bg-rose-200",
   },
+  {
+    title: "Promise Day 🤞💖",
+    desc: "Promises I will keep forever",
+    path: "/index",
+    color: "bg-pink-300",
+  },
 ];
 
 export default function ValentineWeek() {

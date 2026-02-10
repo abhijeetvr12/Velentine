@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 
 function FloatingHearts() {
   return (
@@ -99,6 +100,8 @@ export default function Valentine() {
         alt="cute sticker"
         className="fixed bottom-3 right-3 sm:bottom-4 sm:right-6 w-20 sm:w-28 animate-bounce z-10"
       />
+      
     </div>
+    
   );
 }
