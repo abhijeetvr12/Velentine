@@ -10,6 +10,10 @@ import Secret from "./pages/Secret";
 import Final from "./pages/Final";
 import ProposalDay from "./pages/ProposalDay";
 import ChocolateDay from "./pages/ChocolateDay";
+import TeddyDay from "./pages/TeddyDay";
+import ValentineWeek from "./pages/ValentineWeek";
+import TedSurprise from "./pages/TedSurprise";
+   
 
 function MusicController() {
   const location = useLocation();
@@ -32,6 +36,8 @@ function MusicController() {
         return "attention.mp3"  
       case "/chocolate-day":
         return "Closer.mp3"  
+      case "/teddy-day":
+        return "YouAreInLove.mp3"  
 
       default:
         return "/lover.mp3";
@@ -57,6 +63,10 @@ export default function App() {
         <Route path="/rose-day" element={<RoseDay />} />
         <Route path="/proposal-day" element={<ProposalDay />} />
         <Route path="/chocolate-day" element={<ChocolateDay />} />
+        <Route path="/valentine-week" element={<ValentineWeek />} />
+        <Route path="/teddy-day" element={<TeddyDay />} />
+        <Route path="/ted-surprise" element={<TedSurprise />} />
+
 
       </Routes>
     </BrowserRouter>
