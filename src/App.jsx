@@ -11,6 +11,7 @@ import Final from "./pages/Final";
 import ProposalDay from "./pages/ProposalDay";
 import ChocolateDay from "./pages/ChocolateDay";
 import TeddyDay from "./pages/TeddyDay";
+import HugDay from "./pages/HugDay";
 import ValentineWeek from "./pages/ValentineWeek";
 import TedSurprise from "./pages/TedSurprise";
 import PromiseDay from "./pages/PromiseDay";
@@ -27,7 +28,7 @@ function MusicController() {
       case "/reasons":
         return "/enchanted.mp3";
       case "/secret":
-        return "/invisible.mp3";
+        return "/ILikeMeBetter.mp3";
       case "/final":
         return "/lovestory.mp3";
       case "/rose-day":
@@ -40,6 +41,8 @@ function MusicController() {
         return "YouAreInLove.mp3"  
       case "/index":
         return "LoveMeLikeYouDo.mp3"  
+      case "/hug-day":
+        return "EveryBreathYouTake.mp3"  
 
       default:
         return "/lover.mp3";
@@ -70,6 +73,8 @@ export default function App() {
         <Route path="/ted-surprise" element={<TedSurprise />} />
         <Route path="/promise-day" element={<PromiseDay />} />
         <Route path="/index" element={<Index />} />
+        <Route path="/hug-day" element={<HugDay />} />
+
         
           
       </Routes>

@@ -32,6 +32,12 @@ const days = [
     path: "/index",
     color: "bg-pink-300",
   },
+  {
+  title: "Hug Day 🤗",
+  desc: "A warm hug from me to you",
+  path: "/hug-day",
+  color: "bg-pink-300",
+},
 ];
 
 export default function ValentineWeek() {
