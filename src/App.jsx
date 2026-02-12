@@ -19,7 +19,7 @@ import PromiseDay from "./pages/PromiseDay";
 import Index from "./pages/Index";
 import VirtualKiss from "./pages/VirtualKiss";
 import CatchGame from "./pages/CatchGame";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/react"
 
 function MusicController() {
   const location = useLocation();
@@ -68,7 +68,7 @@ export default function App() {
     <BrowserRouter>
       <HeartBackground />
       <MusicController />
-       <Analytics />
+       <Analytics/>
       <Routes>
         <Route path="/" element={<Valentine />} />
         <Route path="/gallery" element={<Gallery />} />
