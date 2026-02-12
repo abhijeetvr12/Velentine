@@ -38,6 +38,12 @@ const days = [
   path: "/hug-day",
   color: "bg-pink-300",
 },
+{
+  title: "Kiss Day 💋",
+  desc: "A sweet little kiss just for you",
+  path: "/kiss-day",
+  color: "bg-gradient-to-br from-rose-400 to-pink-500 text-white",
+},
 ];
 
 export default function ValentineWeek() {

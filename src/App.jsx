@@ -5,6 +5,7 @@ import RoseDay from "./pages/RoseDay";
 import Valentine from "./pages/Valentine";
 import Gallery from "./pages/Gallery";
 import Timeline from "./pages/Timeline";
+import KissDay from "./pages/KissDay";
 import Reasons from "./pages/Reasons";
 import Secret from "./pages/Secret";
 import Final from "./pages/Final";
@@ -16,6 +17,9 @@ import ValentineWeek from "./pages/ValentineWeek";
 import TedSurprise from "./pages/TedSurprise";
 import PromiseDay from "./pages/PromiseDay";
 import Index from "./pages/Index";
+import VirtualKiss from "./pages/VirtualKiss";
+import CatchGame from "./pages/CatchGame";
+
 function MusicController() {
   const location = useLocation();
 
@@ -43,6 +47,12 @@ function MusicController() {
         return "LoveMeLikeYouDo.mp3"  
       case "/hug-day":
         return "EveryBreathYouTake.mp3"  
+      case "/kiss-day":
+        return "GirlsLikeYou.mp3"  
+      case "/virtual-kiss":
+        return "GirlsLikeYou.mp3"  
+      case "/kiss-game":
+        return "GirlsLikeYou.mp3"  
 
       default:
         return "/lover.mp3";
@@ -74,6 +84,10 @@ export default function App() {
         <Route path="/promise-day" element={<PromiseDay />} />
         <Route path="/index" element={<Index />} />
         <Route path="/hug-day" element={<HugDay />} />
+        <Route path="/kiss-day" element={<KissDay />} />
+        <Route path="/virtual-kiss" element={<VirtualKiss />} />
+        <Route path="/kiss-game" element={<CatchGame />} /> 
+
 
         
           
