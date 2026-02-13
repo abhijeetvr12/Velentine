@@ -19,7 +19,10 @@ import PromiseDay from "./pages/PromiseDay";
 import Index from "./pages/Index";
 import VirtualKiss from "./pages/VirtualKiss";
 import CatchGame from "./pages/CatchGame";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import ValentineDay from "./pages/ValentineDay";
+import LoveLetter from "./pages/LoveLetter";
+import SpecialSurprise from "./pages/SpecialSurprise";
 
 function MusicController() {
   const location = useLocation();
@@ -54,6 +57,8 @@ function MusicController() {
         return "GirlsLikeYou.mp3"  
       case "/kiss-game":
         return "GirlsLikeYou.mp3"  
+      case "/valentine-day":
+        return "Perfect.mp3"  
 
       default:
         return "/lover.mp3";
@@ -88,6 +93,10 @@ export default function App() {
         <Route path="/kiss-day" element={<KissDay />} />
         <Route path="/virtual-kiss" element={<VirtualKiss />} />
         <Route path="/kiss-game" element={<CatchGame />} /> 
+        <Route path="/valentine-day" element={<ValentineDay />} /> 
+ 
+         <Route path="/love-letter" element={<LoveLetter />} />
+         <Route path="/special-surprise" element={<SpecialSurprise />} />
 
 
         

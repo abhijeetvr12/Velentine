@@ -29,21 +29,27 @@ const days = [
   {
     title: "Promise Day 🤞💖",
     desc: "Promises I will keep forever",
-    path: "/index",
+    path: "/promise-day",
     color: "bg-pink-300",
   },
   {
-  title: "Hug Day 🤗",
-  desc: "A warm hug from me to you",
-  path: "/hug-day",
-  color: "bg-pink-300",
-},
-{
-  title: "Kiss Day 💋",
-  desc: "A sweet little kiss just for you",
-  path: "/kiss-day",
-  color: "bg-gradient-to-br from-rose-400 to-pink-500 text-white",
-},
+    title: "Hug Day 🤗",
+    desc: "A warm hug from me to you",
+    path: "/hug-day",
+    color: "bg-pink-300",
+  },
+  {
+    title: "Kiss Day 💋",
+    desc: "A sweet little kiss just for you",
+    path: "/kiss-day",
+    color: "bg-gradient-to-br from-rose-400 to-pink-500 text-white",
+  },
+  {
+    title: "Valentine’s Day ❤️",
+    desc: "The most special day of our love story",
+    path: "/valentine-day",
+    color: "bg-gradient-to-br from-red-600 to-black text-white",
+  },
 ];
 
 export default function ValentineWeek() {
@@ -65,7 +71,8 @@ export default function ValentineWeek() {
           <motion.div
             key={i}
             whileHover={{ scale: 1.05 }}
-            className={`${day.color} p-6 rounded-2xl shadow-lg cursor-pointer`}
+            whileTap={{ scale: 0.95 }}
+            className={`${day.color} p-6 rounded-2xl shadow-lg cursor-pointer transition-all duration-300`}
             onClick={() => navigate(day.path)}
           >
             <h2 className="text-xl sm:text-2xl font-bold mb-3">
